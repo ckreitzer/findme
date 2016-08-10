@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Find Me</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+    
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+       
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="findmestyle.css">
+  
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/app.js"></script>
+    
+   
+    
+    <!-- Init the maps, we use the key obtain in the API google maps dev page -->
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHg9NB6NJR91udSmxlQeKY2zxZMyAI_Mc&callback=initMap">
+    </script>
+
+  </head>  
+<body>  
+       
+             
+        <!-- menu -->
+          <div data-role="main" class="ui-content">
+                <ul>
+                  <li><a class="active" href="index.html" onclick="showMaps()">Find Me</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.google.com/maps/@-31.4174077,-64.1850734,12z?hl=es-ES">Search</a></li>
+                    <li><a href="#SMS">SMS</a></li>
+                    <li><a href="#Call">Call</a></li>
+                    <li><a href="#About">About</a></li>
+                </ul>
+          </div>
+
+          <div data-role="main" id="textDiv" class="ui-content">
+                <p>The option "find me" allows the user to locate on a map</p>
+                <p>Look for an address in the search option</p>
+                <p>Send a SMS with the position to a designated contact</p>
+                <p>Call a designated contact for help</p>
+          </div>
+                <div id="fourMaps">  
+                        <div id="map2"></div>
+                        <div id="pano"></div>
+                        <div id="map1"></div>
+                        <div id="map"></div>    
+                </div>
+    
+
+
+</body>
+</html>

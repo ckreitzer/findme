@@ -1,0 +1,80 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+button {
+    font-family: monospace;
+}
+
+/* menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+active {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 80px;
+}
+
+li a:hover {
+    background-color: #111;
+} 
+/* fin menu */
+
+
+
+
+#fourMaps{
+  
+    visibility: hidden;
+    height: 800px;
+    position: left;
+    top:50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1;
+}
+
+
+
+#map, #pano,#map1, #map2 {
+    float: left;
+    height: 50%;
+    width: 90%;
+    border-left: 10px solid white;
+    z-index: 1;
+
+}
+
+#map3 {
+    float: center;
+    height: 500px;
+    width: 95%;
+    border-left: 10px solid white;
+    z-index: 1;
+
+}
